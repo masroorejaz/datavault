@@ -1,0 +1,52 @@
+/* Existing styles */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+.sidebar {
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px;
+    background-color: #343a40;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+.sidebar a:hover {
+    background-color: #495057;
+}
+.main-content {
+    margin-left: 200px;
+    padding: 20px;
+    flex-grow: 1;
+}
+canvas {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* New login page styles */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+}
+.login-form {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
