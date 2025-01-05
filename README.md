@@ -20,19 +20,30 @@ Follow these steps to set up and run the **DataVault** project.
      2. Create a new database (e.g., `datavault`).
      3. Import the `datavault.sql` file into the newly created database.
 
-2. **Place Project Files**
+2. **Update Database Configuration**
+   - Open the `database.php` file in the project directory.
+   - Enter your database credentials:
+     ```php
+     // Database connection details
+     $hostname = "localhost";
+     $username = "root";
+     $password = "";
+     $database = "datavault";
+     ```
+
+3. **Place Project Files**
    - Copy all files and folders **excluding** the `datavault.sql` file into:
      - `xampp\htdocs` (if using XAMPP), or
      - `wamp64\www` (if using WAMP).
 
-3. **Start Your Server**
+4. **Start Your Server**
    - Ensure that your Apache and MySQL services are running in XAMPP or WAMP.
 
-4. **Access the Application**
+5. **Access the Application**
    - Open a web browser and navigate to:  
      `http://localhost/<your_project_folder>`
 
-5. **Login Credentials**
+6. **Login Credentials**
    - Use the following credentials to log in:
      - **Username:** `admin`
      - **Password:** `admin123`
@@ -51,6 +62,7 @@ Follow these steps to set up and run the **DataVault** project.
   1. The Apache and MySQL services are running.
   2. The project files are correctly placed in the `htdocs` or `www` directory.
   3. The database was successfully imported.
+  4. The database credentials in `database.php` are correct.
 - For further assistance, check the project logs or contact the development team.
 
  
